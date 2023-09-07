@@ -42,7 +42,9 @@ router.post('/', withAuth, async (req, res) => {
       }
   
       
-      const updatedPost = await post.update(req.body);
+      const updatedPost = await Post.update(req.body, {
+        where:{ id: req.params.id}
+      });
   
       if (updatedPost) {
        
