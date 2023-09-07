@@ -3,6 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gupter', serif;
+    min-height: 100vh;
 }
 
 .navbar{
@@ -34,6 +35,11 @@ footer{
     width: 100%;
 }
 
+footer p{
+    color:beige;
+    font-size: 2em;
+}
+
 main{
     padding: 3rem;
     margin: 1rem;
@@ -48,6 +54,7 @@ main{
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
     padding: 2rem;
+    align-items: center;
 }
 
 .form-title{
@@ -67,8 +74,28 @@ main{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 5rem;
 }
 
 .posts a {
     font-size: 1.5em;
+}
+
+.new-post-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 70rem;
+ 
+}
+
+.btn{
+    padding: .5rem;
+    background-color: blueviolet;
+    box-shadow: 3px 3px 6px rgba(0, 0, 135, 0.8);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
 }
