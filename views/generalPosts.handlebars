@@ -1,0 +1,13 @@
+<div>
+    {{#each posts}}
+    <section>
+        <div>
+            <h2><a href="/post/{{id}}">{{title}}</a></h2>
+        </div>
+        <div><span>posted by</span>{{User.username}} </div>
+    </section>
+    <div>
+        {{body}}
+    </div>
+    {{/each}}
+</div>
